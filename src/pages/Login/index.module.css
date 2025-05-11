@@ -1,0 +1,58 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.loginBox {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.loginCard {
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #1890ff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+/* 自定义输入框样式 */
+
+.loginCard :global(.ant-input-affix-wrapper) {
+    border-radius: 6px;
+}
+
+.loginCard :global(.ant-input-affix-wrapper:hover) {
+    border-color: #1890ff;
+}
+
+.loginCard :global(.ant-input-affix-wrapper-focused) {
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+
+/* 自定义按钮样式 */
+
+.loginCard :global(.ant-btn-primary) {
+    height: 44px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(90deg, #1890ff 0%, #096dd9 100%);
+    border: none;
+}
+
+.loginCard :global(.ant-btn-primary:hover) {
+    background: linear-gradient(90deg, #40a9ff 0%, #1890ff 100%);
+    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.2);
+}
