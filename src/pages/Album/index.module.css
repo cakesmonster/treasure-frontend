@@ -3,7 +3,8 @@
     background-color: #f5f5f5;
 }
 
-.banner {
+
+/* .banner {
     height: 200px;
     background: linear-gradient(135deg, #52c41a 0%, #1890ff 100%);
     display: flex;
@@ -17,7 +18,7 @@
     color: white !important;
     margin: 0 !important;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .albumList {
     width: 100%;
@@ -102,6 +103,50 @@
     gap: 6px;
 }
 
+.header {
+    background: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    margin: 24px 16px 24px 16px;
+}
+
+.breadcrumb {
+    margin-bottom: 16px;
+}
+
+.breadcrumb :global(.ant-breadcrumb) {
+    font-size: 16px;
+}
+
+.breadcrumb :global(.ant-breadcrumb-link) {
+    color: #1890ff;
+}
+
+.toolbar {
+    display: flex;
+    gap: 12px;
+}
+
+.toolbar :global(.ant-btn) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 6px;
+}
+
+.toolbar :global(.ant-btn-primary) {
+    background: linear-gradient(90deg, #1890ff 0%, #096dd9 100%);
+    border: none;
+}
+
+.toolbar :global(.ant-btn-primary:hover) {
+    background: linear-gradient(90deg, #40a9ff 0%, #1890ff 100%);
+    box-shadow: 0 4px 12px rgba(24, 144, 255, 0.2);
+}
+
 @media (max-width: 768px) {
     .banner {
         height: 150px;
@@ -123,4 +168,65 @@
         width: 100%;
         justify-content: space-between;
     }
+}
+
+.uploadModal :global(.ant-modal-content) {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.uploadModal :global(.ant-modal-header) {
+    margin-bottom: 0;
+    padding: 16px 24px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.uploadModal :global(.ant-modal-body) {
+    padding: 24px;
+}
+
+.uploadContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.albumSelect {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.albumSelect :global(.ant-select-selector) {
+    border-radius: 6px !important;
+}
+
+.albumSelectCover {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.uploadArea {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.uploader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.uploader :global(.ant-upload-list) {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.uploadTip {
+    color: #ff4d4f;
+    font-size: 14px;
+    margin-top: 8px;
 }
